@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import dummyBooks from '../data/dummyBooks';
 
+
+
 const categories = ['All', 'Fiction', 'Non-Fiction', 'Sci-Fi', 'Fantasy'];
 
 const HomePage = () => {
