@@ -1,13 +1,9 @@
-
 import { Link } from 'react-router-dom';
 import dummyBooks from '../data/dummyBooks';
-
-
 
 const categories = ['All', 'Fiction', 'Non-Fiction', 'Sci-Fi', 'Fantasy'];
 
 const HomePage = () => {
-  // Get top 3 popular books (you can change logic as needed)
   const popularBooks = dummyBooks
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 3);
@@ -34,7 +30,7 @@ const HomePage = () => {
             <h3>{book.title}</h3>
             <p><strong>Author:</strong> {book.author}</p>
             <p><strong>Rating:</strong> {book.rating}</p>
-            <Link to={`/books/details/${book.id}`}>View Details</Link>
+            <Link to={`/book/${book.id}`}>View Details</Link>
           </div>
         ))}
       </section>
