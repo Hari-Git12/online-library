@@ -105,7 +105,7 @@ body.dark-mode .category {
   margin: 20px 0;
   background-color: #fefefe;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: background 0.3s, transform 0.2s;
+  transition: background  0.3s, transform 0.2s;
 }
 
 .book-card:hover {
